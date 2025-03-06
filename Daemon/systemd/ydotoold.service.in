@@ -6,7 +6,8 @@ Type=simple
 Restart=always
 RestartSec=3
 ExecStartPre=/bin/sleep 2
-ExecStart=@CMAKE_INSTALL_FULL_BINDIR@/ydotoold
+ExecStart=@CMAKE_INSTALL_FULL_BINDIR@/ydotoold --socket=/tmp/.ydotool_socket
+ExecStartPost=/bin/chmod 666 /tmp/.ydotool_socket
 ExecReload=/usr/bin/kill -HUP $MAINPID
 KillMode=process
 TimeoutSec=180
