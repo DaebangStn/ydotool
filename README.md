@@ -16,10 +16,9 @@ There are a few extra options that can be configured when running CMake
 - OPENRC=ON|OFF - whether to use openrc service file. Default: OFF (TBD)
 
 
-### Compile
+### Compile and Install
 
-<pre><code>
-git clone https://github.com/ReimuNotMoe/ydotool
+<pre><code>git clone https://github.com/DaebangStn/ydotool
 cd ydotool
 mkdir build
 cd build
